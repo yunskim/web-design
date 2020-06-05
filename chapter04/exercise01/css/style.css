@@ -280,7 +280,7 @@ header {
     right: 10px;
     bottom: 10px;
 }
-.footer {
+footer {
 	float: right;
 }
 
@@ -288,12 +288,16 @@ header {
 	float: left;
 	height: 100px;
 	width: 800px;
+	background-color: #ababab;
 }
 
 .copy {
 	float: left;
 	height: 100px;
 	width: 600px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 100px
 }
 
 .site {
@@ -307,9 +311,34 @@ header {
 	height: 50px;
 	width: 200px;
 }
+.sns ul {
+    text-align: center;
+}
 
+.sns ul li {
+    display: inline-block;
+}
+
+.sns img {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
+
+.sns img:hover {
+    opacity: 0.5;
+}
 .familysite {
 	float: right;
 	height: 50px;
 	width: 200px;
+}
+
+.familysite select{
+    float: right;
+    height: 30px;
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
