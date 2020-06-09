@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+}
+body {
+    width: 1200px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
