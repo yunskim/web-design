@@ -16,3 +16,39 @@ a {
     text-decoration: none;
     display: block;
 }
+header {
+    height: 100px;
+    width: 1200px;
+}
+.top {
+    height: 100px;
+    width: 1200px;
+}
+.logo {
+    float: left;
+    height: 100px;
+    width: 250px;
+}
+.menu {
+    float: right;
+    height: 100px;
+    width: 800px;
+}
+.bodywrap {
+    height: 500px;
+    width: 1200px;
+}
+.imgslide {
+    height: 300px;
+    width: 1200px;
+}
+.contents {
+    float: left;
+    height: 200px;
+    width: 1200px;
+}
+footer {
+    height: 100px;
+    width: 1200px;
+    background-color: #30a3f3;
+}
