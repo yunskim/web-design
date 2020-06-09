@@ -47,8 +47,46 @@ header {
     height: 200px;
     width: 1200px;
 }
+.tabmenu {
+    float: left;
+    height: 200px;
+    width: 400;x
+}
+.otherwrap {
+    float: right;
+    height: 200px;
+    width: 800px;
+}
+.banner {
+    float: left;
+    height: 200px;
+    width: 400px;
+}
+.shortcut {
+    float: right;
+    height: 200px;
+    width: 400px;
+}
 footer {
     height: 100px;
     width: 1200px;
     background-color: #30a3f3;
+}
+.btlogo {
+    float: left;
+    height: 100px;
+    width: 250px;
+}
+.site {
+    float: right;
+    height: 100px;
+    width: 600px;
+}
+.btmenu {
+    height: 50px;
+    width: 600px;
+}
+.copy {
+    height: 50px;
+    width: 600px;
 }
