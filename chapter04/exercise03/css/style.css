@@ -29,11 +29,58 @@ header {
     height: 100px;
     width: 250px;
 }
+.logo img {
+   float: left;
+   height: 42px;
+   width: 180px;
+   margin-top: 30px;
+   margin-left: 25px;
+}
 .menu {
     float: right;
     height: 100px;
     width: 800px;
+    z-index: 1;
 }
+.navi {
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.navi > li {
+    float: left;
+}
+.navi > li > a {
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    line-weight: bold;
+    text-align: center;
+    background-color: #0066ad;
+    color: #ffffff;
+}
+.navi > li > a:hover {
+    background-color: #30a3f3;
+}
+.submenu {
+    width: 180px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+.submenu > li > a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ababab;
+    color: #ffffff;
+}
+.submenu > li > a:hover {
+    background-color; #30a3f3;
+}
+
 .bodywrap {
     height: 500px;
     width: 1200px;
@@ -41,6 +88,25 @@ header {
 .imgslide {
     height: 300px;
     width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+.imgslide > a {
+    display: block;
+    position: absolute;
+}
+.imgtext {
+    height: 50px;
+    width: 500px;
+    position: absolute;
+    margin: -30px 0 0 -250px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40, 40, 40, 0.5);
+    left: 50%;
+    top: 50%;
 }
 .contents {
     float: left;
