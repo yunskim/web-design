@@ -112,12 +112,83 @@ header {
     float: left;
     height: 200px;
     width: 1200px;
+    position: absolute;
 }
 .tabmenu {
     float: left;
-    height: 200px;
-    width: 400;x
+    height: 180px;
+    width: 395px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+.tabmenu > li {
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+.tabmenu > li > a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    background-color: #cccccc;
+    border: 1px solid @dddddd;
+    border-bottom: none;
+}
+.tabmenu > li:first-child {
+    border-right: none;
+}
+.tabmenu > li.active > a {
+    background-color: #ffffff;
+}
+.tabmenu > li div {
+    position: absoulte;
+    left: 0px;
+    height: 0;
+    overflow: hidden;
+}
+.tabmenu > li.active div {
+    width: 393px;
+    height: 148px;
+    border: 1px solid #dddddd;
+    z-index: 1;
+}
+.notice ul {
+    float: left;
+    width: 393px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.notice li {
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.notice li:nth-child(2n) {
+    background-color: #cccccc;
+}
+.notice li span {
+    float: right;
+}
+.notice li:hover {
+    font-weight: bold;
+}
+.gallery li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.gallery img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+.gallery li:hover {
+    opacity: 0.5;
+}
+
+
 .otherwrap {
     float: right;
     height: 200px;
@@ -125,13 +196,100 @@ header {
 }
 .banner {
     float: left;
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 395px;
+}
+.bntext {
+    float: left;
+    height: 40px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 450px;
+    top: 80px;
+}
+.banner img:hover {
+    opacity: 0.5;
 }
 .shortcut {
     float: right;
-    height: 200px;
+    height: 180px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.shortcut img {
+    float: right;
+    height: 180px;
     width: 400px;
+}
+.sctext {
+    float: right;
+    height:  40px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40, 40, 40, 0.3);
+    left: 850px;
+    top: 80px;
+}
+.shortcut img:hover {
+    opacity: 0.5;
+}
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: none;
+}
+#modal.active {
+    display: block;
+}
+.modal_up {
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    left: 40%;
+    top: 20%;
+    background-color: #ffffff;
+}
+.uptitle {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody {
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn {
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 footer {
     height: 100px;
@@ -143,16 +301,37 @@ footer {
     height: 100px;
     width: 250px;
 }
+.btlogo img {
+    float: left;
+    height: 42px;
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.btmenu {
+    height: 50px;
+    width: 600px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+.btmenu li {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100px;
+}
+.btmenu li:hover {
+    font-weight: bold;
+}
 .site {
     float: right;
     height: 100px;
     width: 600px;
 }
-.btmenu {
-    height: 50px;
-    width: 600px;
-}
 .copy {
     height: 50px;
     width: 600px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
 }

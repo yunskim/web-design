@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chapter 3: Block Formatting Context</title>
+	<link rel="stylesheet" href="../assets/css/my_common.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slap">
+	<style>
+
+		.container {
+			width: 400px;
+			border: 2px solid #e5dbff;
+			border-radius: 5px;
+			display: flow-root;
+
+		}
+
+		.box {
+			float: left;
+			width: 200px;
+			border: 2px solid #e5dbff;
+			padding: 10px;
+		}
+
+	</style>
+</head>
+<body id="ch1">
+	<header class="example-header">
+		<ul class="meta">
+			<li class="book">The New CSS Layout</li>
+			<li class="author">Rachel Andrew</li>
+			<li class="chapter">Chapter 3</li>
+			<li class="index"><a href="../">Index of examples</a></li>
+		</ul>
+		<div class="inner">
+			<h1>Block Formatting Context</h1>
+	</header>
+	<div class="example">
+		<div class="container">
+			<div class="box">
+				<p>I am floated left.</p>
+			</div>
+		</div>
+
+</body>
+</html>
